@@ -8,5 +8,6 @@
     "south": "izi_pistols:blocks/random_pistol",
     "west": "izi_pistols:blocks/random_pistol",
     "particle": "izi_pistols:blocks/random_pistol"
-  }
+  },
+  "render_type": "solid"
 }

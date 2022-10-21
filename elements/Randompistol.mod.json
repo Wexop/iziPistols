@@ -1,6 +1,6 @@
 {
-  "_fv": 10,
-  "_type": "gun",
+  "_fv": 34,
+  "_type": "rangeditem",
   "definition": {
     "renderType": 0,
     "texture": "random_pistol",
@@ -20,6 +20,7 @@
       "value": "CUSTOM:tir_pistolet"
     },
     "hasGlow": false,
+    "animation": "bow",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "bulletPower": 5.0,

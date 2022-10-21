@@ -1,5 +1,6 @@
 modLoader="javafml"
-loaderVersion="[31,)"
+loaderVersion="[43,)"
+license="Not specified"
 
 [[mods]]
 modId="izi_pistols"
@@ -12,7 +13,7 @@ authors="Matthieu, MCreator"
 [[dependencies.izi_pistols]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.2]"
+    versionRange="[1.19.2]"
     ordering="NONE"
     side="BOTH"
 

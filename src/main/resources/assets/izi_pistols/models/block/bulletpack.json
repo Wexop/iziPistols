@@ -8,5 +8,6 @@
     "south": "izi_pistols:blocks/bullet_pack",
     "west": "izi_pistols:blocks/bullet_pack",
     "particle": "izi_pistols:blocks/bullet_pack"
-  }
+  },
+  "render_type": "solid"
 }
