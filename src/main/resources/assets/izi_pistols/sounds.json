@@ -1,0 +1,11 @@
+{
+  "tir_pistolet": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "izi_pistols:tir_pistolet",
+        "stream": false
+      }
+    ]
+  }
+}

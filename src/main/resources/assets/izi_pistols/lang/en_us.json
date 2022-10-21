@@ -1,0 +1,19 @@
+{
+  "block.izi_pistols.randompistolore": "Randompistolore",
+  "item.izi_pistols.woodpistol": "WoodPistol",
+  "item.izi_pistols.blazepistol": "Blaze pistol",
+  "item.izi_pistols.eyepistol": "Eyepistol",
+  "item.izi_pistols.stonepisto": "StonePistol",
+  "item.izi_pistols.test": "DirtPistol",
+  "item.izi_pistols.mob_powder": "Mob Powder Spawn Egg",
+  "item.izi_pistols.goldpistol": "GoldPistol",
+  "item.izi_pistols.ironpistol": "IronPistol",
+  "item.izi_pistols.tnt_pistol": "TNTPistol",
+  "block.izi_pistols.bulletpack": "Bulletpack",
+  "item.izi_pistols.emeraudpistol": "EmeraudPistol",
+  "entity.izi_pistols.mob_powder": "Mob Powder",
+  "item.izi_pistols.randompistol": "Random_pistol",
+  "item.izi_pistols.bullet": "Bullet",
+  "item.izi_pistols.diamspistol": "DiamsPistol",
+  "item.izi_pistols.netherpistol": "Nether pistol"
+}

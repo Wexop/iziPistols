@@ -1,0 +1,494 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Test",
+      "type": "gun",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "test"
+    },
+    {
+      "name": "Bullet",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bullet"
+    },
+    {
+      "name": "Bulletcraft",
+      "type": "recipe",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bulletcraft"
+    },
+    {
+      "name": "Dirtpistolcraft",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirtpistolcraft"
+    },
+    {
+      "name": "Stonepisto",
+      "type": "gun",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stonepisto"
+    },
+    {
+      "name": "Stonepistole",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stonepistole"
+    },
+    {
+      "name": "Woodpistol",
+      "type": "gun",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "woodpistol"
+    },
+    {
+      "name": "Woodpisto",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "woodpisto"
+    },
+    {
+      "name": "Ironpistol",
+      "type": "gun",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ironpistol"
+    },
+    {
+      "name": "Ironpistolcraft",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ironpistolcraft"
+    },
+    {
+      "name": "Goldpistol",
+      "type": "gun",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goldpistol"
+    },
+    {
+      "name": "Goldpistolcraft",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goldpistolcraft"
+    },
+    {
+      "name": "Diamspistol",
+      "type": "gun",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamspistol"
+    },
+    {
+      "name": "Diamspistolcraft",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamspistolcraft"
+    },
+    {
+      "name": "Emeraudpistol",
+      "type": "gun",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emeraudpistol"
+    },
+    {
+      "name": "Emeraudpistolcraft",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emeraudpistolcraft"
+    },
+    {
+      "name": "TNTPistol",
+      "type": "gun",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tnt_pistol"
+    },
+    {
+      "name": "TNTPistolBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tnt_pistol_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TNTpistolcraft",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tn_tpistolcraft"
+    },
+    {
+      "name": "EyepistolBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eyepistol_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Eyepistol",
+      "type": "gun",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eyepistol"
+    },
+    {
+      "name": "Eyepistolcraft",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eyepistolcraft"
+    },
+    {
+      "name": "Netherpistol",
+      "type": "gun",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherpistol"
+    },
+    {
+      "name": "Netherpistolcraft",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherpistolcraft"
+    },
+    {
+      "name": "Blazepistol",
+      "type": "gun",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blazepistol"
+    },
+    {
+      "name": "BlazepistolBulletHitsPlayer",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blazepistol_bullet_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Blazepistolcraft",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blazepistolcraft"
+    },
+    {
+      "name": "MobPowderEntityDies",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mob_powder_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MobPowder",
+      "type": "mob",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mob_powder"
+    },
+    {
+      "name": "BlazepistolBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blazepistol_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bulletpack",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bulletpack"
+    },
+    {
+      "name": "RandompistolBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "randompistol_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Randompistol",
+      "type": "gun",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "randompistol"
+    },
+    {
+      "name": "RandompistoloreBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "randompistolore_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Randompistolore",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "randompistolore"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "tir_pistolet",
+      "file": "tir_pistolet",
+      "category": "master"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "block.izi_pistols.randompistolore": "Randompistolore",
+      "item.izi_pistols.woodpistol": "WoodPistol",
+      "item.izi_pistols.blazepistol": "Blaze pistol",
+      "item.izi_pistols.eyepistol": "Eyepistol",
+      "item.izi_pistols.stonepisto": "StonePistol",
+      "item.izi_pistols.test": "DirtPistol",
+      "item.izi_pistols.mob_powder": "Mob Powder Spawn Egg",
+      "item.izi_pistols.goldpistol": "GoldPistol",
+      "item.izi_pistols.ironpistol": "IronPistol",
+      "item.izi_pistols.tnt_pistol": "TNTPistol",
+      "block.izi_pistols.bulletpack": "Bulletpack",
+      "item.izi_pistols.emeraudpistol": "EmeraudPistol",
+      "entity.izi_pistols.mob_powder": "Mob Powder",
+      "item.izi_pistols.randompistol": "Random_pistol",
+      "item.izi_pistols.bullet": "Bullet",
+      "item.izi_pistols.diamspistol": "DiamsPistol",
+      "item.izi_pistols.netherpistol": "Nether pistol"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "izi_pistols",
+    "modName": "IZI PISTOLS",
+    "version": "1.0.0",
+    "author": "Matthieu, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "modElementsPackage": "net.mcreator.izipistols",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000432115
+}

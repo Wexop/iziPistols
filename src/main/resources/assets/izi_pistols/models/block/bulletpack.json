@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "izi_pistols:blocks/bullet_pack",
+    "up": "izi_pistols:blocks/bullet_pack",
+    "north": "izi_pistols:blocks/bullet_pack",
+    "east": "izi_pistols:blocks/bullet_pack",
+    "south": "izi_pistols:blocks/bullet_pack",
+    "west": "izi_pistols:blocks/bullet_pack",
+    "particle": "izi_pistols:blocks/bullet_pack"
+  }
+}
