@@ -46,8 +46,8 @@ public class BulletpackFeature extends OreFeature {
 		CONFIGURED_FEATURE = FeatureUtils.register("izi_pistols:bulletpack", FEATURE,
 				new OreConfiguration(BulletpackFeatureRuleTest.INSTANCE, IziPistolsModBlocks.BULLETPACK.get().defaultBlockState(), 4));
 		PLACED_FEATURE = PlacementUtils.register("izi_pistols:bulletpack", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(3), InSquarePlacement.spread(),
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(20), InSquarePlacement.spread(),
+						HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
