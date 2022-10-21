@@ -12,8 +12,8 @@ public class RandompistoloreBlockDestroyedByPlayerProcedure {
 		double chance = 0;
 		double roll = 0;
 		chance = Math.random();
-		chance = Math.random();
-		if (chance >= 0.9) {
+		roll = Math.random();
+		if (chance >= 0.98) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IziPistolsModItems.EMERAUDPISTOL.get()));
 				entityToSpawn.setPickUpDelay(10);
@@ -26,7 +26,7 @@ public class RandompistoloreBlockDestroyedByPlayerProcedure {
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}
-		} else if (chance >= 0.75 && chance < 0.9) {
+		} else if (chance >= 0.95 && chance < 0.98) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IziPistolsModItems.RANDOMPISTOL.get()));
 				entityToSpawn.setPickUpDelay(10);
@@ -39,26 +39,26 @@ public class RandompistoloreBlockDestroyedByPlayerProcedure {
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}
-		} else if (chance >= 0.6 && chance < 0.75) {
-			if (chance >= 0.75) {
+		} else if (chance >= 0.9 && chance < 0.95) {
+			if (roll >= 0.75) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IziPistolsModItems.DIAMSPISTOL.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
-			} else if (chance >= 0.5 && chance < 0.75) {
+			} else if (roll >= 0.5 && roll < 0.75) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IziPistolsModItems.TNT_PISTOL.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
-			} else if (chance >= 0.25 && chance < 0.5) {
+			} else if (roll >= 0.25 && roll < 0.5) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IziPistolsModItems.EYEPISTOL.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
-			} else if (chance >= 0 && chance < 0.25) {
+			} else if (roll >= 0 && roll < 0.25) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IziPistolsModItems.BLAZEPISTOL.get()));
 					entityToSpawn.setPickUpDelay(10);
@@ -72,47 +72,47 @@ public class RandompistoloreBlockDestroyedByPlayerProcedure {
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}
-		} else if (chance >= 0.4 && chance < 0.6) {
-			if (chance >= 0.75) {
+		} else if (chance >= 0.6 && chance < 0.9) {
+			if (roll >= 0.75) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IziPistolsModItems.GOLDPISTOL.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
-			} else if (chance >= 0 && chance < 0.75) {
+			} else if (roll >= 0 && roll < 0.75) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IziPistolsModItems.IRONPISTOL.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}
-		} else if (chance >= 0.1 && chance < 0.4) {
-			if (chance >= 0.75) {
+		} else if (chance >= 0.05 && chance < 0.6) {
+			if (roll >= 0.75) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IziPistolsModItems.STONEPISTO.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
-			} else if (chance >= 0.5 && chance < 0.75) {
+			} else if (roll >= 0.5 && roll < 0.75) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IziPistolsModItems.WOODPISTOL.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
-			} else if (chance >= 0.25 && chance < 0.5) {
+			} else if (roll >= 0.25 && roll < 0.5) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IziPistolsModItems.TEST.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
-			} else if (chance >= 0 && chance < 0.25) {
+			} else if (roll >= 0 && roll < 0.25) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IziPistolsModItems.NETHERPISTOL.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}
-		} else if (chance >= 0 && chance < 0.1) {
+		} else if (chance >= 0 && chance < 0.05) {
 			for (int index3 = 0; index3 < (int) (128); index3++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IziPistolsModItems.BULLET.get()));
