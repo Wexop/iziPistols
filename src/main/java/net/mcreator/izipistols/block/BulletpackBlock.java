@@ -31,6 +31,6 @@ public class BulletpackBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(IziPistolsModItems.BULLET.get(), 12));
+		return Collections.singletonList(new ItemStack(IziPistolsModItems.BULLET.get(), 6));
 	}
 }
