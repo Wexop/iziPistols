@@ -29,6 +29,7 @@ import net.mcreator.izipistols.entity.EyepistolEntity;
 import net.mcreator.izipistols.entity.EmeraudpistolEntity;
 import net.mcreator.izipistols.entity.DiamspistolEntity;
 import net.mcreator.izipistols.entity.BlazepistolEntity;
+import net.mcreator.izipistols.entity.AnimalpistolEntity;
 import net.mcreator.izipistols.IziPistolsMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -74,6 +75,9 @@ public class IziPistolsModEntities {
 					.sized(1.4f, 0.9f));
 	public static final RegistryObject<EntityType<RandompistolEntity>> RANDOMPISTOL = register("projectile_randompistol",
 			EntityType.Builder.<RandompistolEntity>of(RandompistolEntity::new, MobCategory.MISC).setCustomClientFactory(RandompistolEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<AnimalpistolEntity>> ANIMALPISTOL = register("projectile_animalpistol",
+			EntityType.Builder.<AnimalpistolEntity>of(AnimalpistolEntity::new, MobCategory.MISC).setCustomClientFactory(AnimalpistolEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {

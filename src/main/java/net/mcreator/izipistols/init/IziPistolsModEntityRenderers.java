@@ -30,5 +30,6 @@ public class IziPistolsModEntityRenderers {
 		event.registerEntityRenderer(IziPistolsModEntities.BLAZEPISTOL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(IziPistolsModEntities.MOB_POWDER.get(), MobPowderRenderer::new);
 		event.registerEntityRenderer(IziPistolsModEntities.RANDOMPISTOL.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(IziPistolsModEntities.ANIMALPISTOL.get(), ThrownItemRenderer::new);
 	}
 }

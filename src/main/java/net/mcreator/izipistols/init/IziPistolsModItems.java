@@ -27,6 +27,7 @@ import net.mcreator.izipistols.item.EmeraudpistolItem;
 import net.mcreator.izipistols.item.DiamspistolItem;
 import net.mcreator.izipistols.item.BulletItem;
 import net.mcreator.izipistols.item.BlazepistolItem;
+import net.mcreator.izipistols.item.AnimalpistolItem;
 import net.mcreator.izipistols.IziPistolsMod;
 
 public class IziPistolsModItems {
@@ -48,6 +49,7 @@ public class IziPistolsModItems {
 	public static final RegistryObject<Item> BULLETPACK = block(IziPistolsModBlocks.BULLETPACK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> RANDOMPISTOL = REGISTRY.register("randompistol", () -> new RandompistolItem());
 	public static final RegistryObject<Item> RANDOMPISTOLORE = block(IziPistolsModBlocks.RANDOMPISTOLORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> ANIMALPISTOL = REGISTRY.register("animalpistol", () -> new AnimalpistolItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
