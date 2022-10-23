@@ -47,7 +47,7 @@ public class RandompistoloreFeature extends OreFeature {
 				new OreConfiguration(RandompistoloreFeatureRuleTest.INSTANCE, IziPistolsModBlocks.RANDOMPISTOLORE.get().defaultBlockState(), 4));
 		PLACED_FEATURE = PlacementUtils.register("izi_pistols:randompistolore", CONFIGURED_FEATURE,
 				List.of(CountPlacement.of(20), InSquarePlacement.spread(),
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)), BiomeFilter.biome()));
+						HeightRangePlacement.triangle(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

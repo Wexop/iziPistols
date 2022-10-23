@@ -35,6 +35,9 @@
     "customBulletModelTexture": "",
     "onBulletHitsBlock": {
       "name": "AnimalpistolProjectileHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "AnimalpistolProjectileHitsBlock"
     }
   }
 }

@@ -73,13 +73,26 @@ public class RandompistoloreBlockDestroyedByPlayerProcedure {
 				}
 			}
 		} else if (chance >= 0.6 && chance < 0.9) {
+			for (int index3 = 0; index3 < (int) (16); index3++) {
+				if (world instanceof Level _level && !_level.isClientSide()) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IziPistolsModItems.BULLET.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
 			if (roll >= 0.75) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IziPistolsModItems.GOLDPISTOL.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
-			} else if (roll >= 0 && roll < 0.75) {
+			} else if (roll >= 0.5 && roll < 0.75) {
+				if (world instanceof Level _level && !_level.isClientSide()) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IziPistolsModItems.ANIMALPISTOL.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			} else if (roll >= 0 && roll < 0.5) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IziPistolsModItems.IRONPISTOL.get()));
 					entityToSpawn.setPickUpDelay(10);
@@ -113,7 +126,7 @@ public class RandompistoloreBlockDestroyedByPlayerProcedure {
 				}
 			}
 		} else if (chance >= 0 && chance < 0.05) {
-			for (int index3 = 0; index3 < (int) (128); index3++) {
+			for (int index4 = 0; index4 < (int) (128); index4++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IziPistolsModItems.BULLET.get()));
 					entityToSpawn.setPickUpDelay(10);
