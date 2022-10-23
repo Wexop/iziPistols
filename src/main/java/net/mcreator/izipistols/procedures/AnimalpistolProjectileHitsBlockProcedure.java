@@ -2,8 +2,8 @@ package net.mcreator.izipistols.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.animal.horse.ZombieHorse;
+import net.minecraft.world.entity.animal.horse.TraderLlama;
 import net.minecraft.world.entity.animal.horse.SkeletonHorse;
-import net.minecraft.world.entity.animal.horse.Llama;
 import net.minecraft.world.entity.animal.horse.Horse;
 import net.minecraft.world.entity.animal.goat.Goat;
 import net.minecraft.world.entity.animal.axolotl.Axolotl;
@@ -32,7 +32,7 @@ public class AnimalpistolProjectileHitsBlockProcedure {
 		random1 = Math.random();
 		roll = Math.random();
 		yCalculated = y + 1;
-		if (random1 >= 0.5 && random1 < 1) {
+		if (random1 >= 0.35 && random1 < 1) {
 			if (roll >= 0.75 && roll < 1) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new Cow(EntityType.COW, _level);
@@ -70,7 +70,7 @@ public class AnimalpistolProjectileHitsBlockProcedure {
 					world.addFreshEntity(entityToSpawn);
 				}
 			}
-		} else if (random1 >= 0.3 && random1 < 0.5) {
+		} else if (random1 >= 0.2 && random1 < 0.35) {
 			if (roll >= 0.75 && roll < 1) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new Cat(EntityType.CAT, _level);
@@ -108,7 +108,7 @@ public class AnimalpistolProjectileHitsBlockProcedure {
 					world.addFreshEntity(entityToSpawn);
 				}
 			}
-		} else if (random1 >= 0.2 && random1 < 0.3) {
+		} else if (random1 >= 0.13 && random1 < 0.2) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new Goat(EntityType.GOAT, _level);
 				entityToSpawn.moveTo(x, yCalculated, z, world.getRandom().nextFloat() * 360F, 0);
@@ -117,7 +117,7 @@ public class AnimalpistolProjectileHitsBlockProcedure {
 							null);
 				world.addFreshEntity(entityToSpawn);
 			}
-		} else if (random1 >= 0.15 && random1 < 0.2) {
+		} else if (random1 >= 0.08 && random1 < 0.13) {
 			if (roll >= 0.75 && roll < 1) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new Bat(EntityType.BAT, _level);
@@ -155,16 +155,16 @@ public class AnimalpistolProjectileHitsBlockProcedure {
 					world.addFreshEntity(entityToSpawn);
 				}
 			}
-		} else if (random1 >= 0.1 && random1 < 0.15) {
+		} else if (random1 >= 0.04 && random1 < 0.08) {
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = new Llama(EntityType.LLAMA, _level);
+				Entity entityToSpawn = new TraderLlama(EntityType.TRADER_LLAMA, _level);
 				entityToSpawn.moveTo(x, yCalculated, z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof Mob _mobToSpawn)
 					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null,
 							null);
 				world.addFreshEntity(entityToSpawn);
 			}
-		} else if (random1 >= 0.05 && random1 < 0.1) {
+		} else if (random1 >= 0.02 && random1 < 0.04) {
 			if (roll >= 0.75 && roll < 1) {
 				for (int index0 = 0; index0 < (int) (5); index0++) {
 					if (world instanceof ServerLevel _level) {
@@ -210,7 +210,7 @@ public class AnimalpistolProjectileHitsBlockProcedure {
 					}
 				}
 			}
-		} else if (random1 >= 0.02 && random1 < 0.05) {
+		} else if (random1 >= 0.01 && random1 < 0.02) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new Axolotl(EntityType.AXOLOTL, _level);
 				entityToSpawn.moveTo(x, yCalculated, z, world.getRandom().nextFloat() * 360F, 0);
