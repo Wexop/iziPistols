@@ -22,6 +22,7 @@ import net.mcreator.izipistols.entity.TNTPistolEntity;
 import net.mcreator.izipistols.entity.StonepistoEntity;
 import net.mcreator.izipistols.entity.RandompistolEntity;
 import net.mcreator.izipistols.entity.NetherpistolEntity;
+import net.mcreator.izipistols.entity.MonsterpistolEntity;
 import net.mcreator.izipistols.entity.MobPowderEntity;
 import net.mcreator.izipistols.entity.IronpistolEntity;
 import net.mcreator.izipistols.entity.GoldpistolEntity;
@@ -78,6 +79,9 @@ public class IziPistolsModEntities {
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<AnimalpistolEntity>> ANIMALPISTOL = register("projectile_animalpistol",
 			EntityType.Builder.<AnimalpistolEntity>of(AnimalpistolEntity::new, MobCategory.MISC).setCustomClientFactory(AnimalpistolEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MonsterpistolEntity>> MONSTERPISTOL = register("projectile_monsterpistol",
+			EntityType.Builder.<MonsterpistolEntity>of(MonsterpistolEntity::new, MobCategory.MISC).setCustomClientFactory(MonsterpistolEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
