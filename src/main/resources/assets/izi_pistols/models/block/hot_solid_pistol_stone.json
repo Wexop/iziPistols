@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "izi_pistols:blocks/hotsolidpistolstone",
+    "up": "izi_pistols:blocks/hotsolidpistolstone",
+    "north": "izi_pistols:blocks/hotsolidpistolstone",
+    "east": "izi_pistols:blocks/hotsolidpistolstone",
+    "south": "izi_pistols:blocks/hotsolidpistolstone",
+    "west": "izi_pistols:blocks/hotsolidpistolstone",
+    "particle": "izi_pistols:blocks/hotsolidpistolstone"
+  },
+  "render_type": "solid"
+}

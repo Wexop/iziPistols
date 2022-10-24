@@ -503,6 +503,30 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "solid_pistol_craft"
+    },
+    {
+      "name": "SolidPistolOr",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solid_pistol_or"
+    },
+    {
+      "name": "SolidPistolOrRecipe",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solid_pistol_or_recipe"
+    },
+    {
+      "name": "HotSolidPistolStone",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hot_solid_pistol_stone"
     }
   ],
   "variable_elements": [],
@@ -532,8 +556,10 @@
       "block.izi_pistols.bulletpack": "Bulletpack",
       "item.izi_pistols.emeraudpistol": "EmeraudPistol",
       "item.izi_pistols.mob_powder_spawn_egg": "Mob Powder Spawn Egg",
+      "block.izi_pistols.hot_solid_pistol_stone": "Hot Solid Pistol Stone",
       "item.izi_pistols.solid_pistol": "Solid Pistol",
       "entity.izi_pistols.mob_powder": "Mob Powder",
+      "block.izi_pistols.solid_pistol_or": "Solid Pistol Or",
       "item.izi_pistols.randompistol": "Random_pistol",
       "item.izi_pistols.bullet": "Bullet",
       "item.izi_pistols.diamspistol": "DiamsPistol",

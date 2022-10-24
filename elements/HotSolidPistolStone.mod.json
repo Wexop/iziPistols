@@ -2,12 +2,12 @@
   "_fv": 34,
   "_type": "block",
   "definition": {
-    "texture": "solidpistolor",
-    "textureTop": "solidpistolor",
-    "textureLeft": "solidpistolor",
-    "textureFront": "solidpistolor",
-    "textureRight": "solidpistolor",
-    "textureBack": "solidpistolor",
+    "texture": "hotsolidpistolstone",
+    "textureTop": "hotsolidpistolstone",
+    "textureLeft": "hotsolidpistolstone",
+    "textureFront": "hotsolidpistolstone",
+    "textureRight": "hotsolidpistolstone",
+    "textureBack": "hotsolidpistolstone",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Solid Pistol Or",
+    "name": "Hot Solid Pistol Stone",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -42,13 +42,13 @@
     "creativeTab": {
       "value": "BUILDING_BLOCKS"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:SolidPistol"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": true,
+    "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
@@ -136,6 +136,6 @@
     "frequencyPerChunks": 1,
     "frequencyOnChunk": 1,
     "minGenerateHeight": -64,
-    "maxGenerateHeight": 0
+    "maxGenerateHeight": 64
   }
 }

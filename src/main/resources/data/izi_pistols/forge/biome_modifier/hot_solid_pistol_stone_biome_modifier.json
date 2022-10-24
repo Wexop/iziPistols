@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "izi_pistols:hot_solid_pistol_stone",
+  "step": "underground_ores"
+}

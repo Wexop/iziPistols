@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.izipistols.block.SolidPistolOrBlock;
 import net.mcreator.izipistols.block.RandompistoloreBlock;
+import net.mcreator.izipistols.block.HotSolidPistolStoneBlock;
 import net.mcreator.izipistols.block.BulletpackBlock;
 import net.mcreator.izipistols.IziPistolsMod;
 
@@ -20,4 +21,6 @@ public class IziPistolsModBlocks {
 	public static final RegistryObject<Block> BULLETPACK = REGISTRY.register("bulletpack", () -> new BulletpackBlock());
 	public static final RegistryObject<Block> RANDOMPISTOLORE = REGISTRY.register("randompistolore", () -> new RandompistoloreBlock());
 	public static final RegistryObject<Block> SOLID_PISTOL_OR = REGISTRY.register("solid_pistol_or", () -> new SolidPistolOrBlock());
+	public static final RegistryObject<Block> HOT_SOLID_PISTOL_STONE = REGISTRY.register("hot_solid_pistol_stone",
+			() -> new HotSolidPistolStoneBlock());
 }
