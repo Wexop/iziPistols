@@ -11,6 +11,7 @@ import net.minecraftforge.fml.common.Mod;
 
 import net.minecraft.world.level.levelgen.feature.Feature;
 
+import net.mcreator.izipistols.world.features.plants.RandomgrassFeature;
 import net.mcreator.izipistols.world.features.ores.SolidPistolOrFeature;
 import net.mcreator.izipistols.world.features.ores.RandompistoloreFeature;
 import net.mcreator.izipistols.world.features.ores.HotSolidPistolStoneFeature;
@@ -25,4 +26,5 @@ public class IziPistolsModFeatures {
 	public static final RegistryObject<Feature<?>> SOLID_PISTOL_OR = REGISTRY.register("solid_pistol_or", SolidPistolOrFeature::feature);
 	public static final RegistryObject<Feature<?>> HOT_SOLID_PISTOL_STONE = REGISTRY.register("hot_solid_pistol_stone",
 			HotSolidPistolStoneFeature::feature);
+	public static final RegistryObject<Feature<?>> RANDOMGRASS = REGISTRY.register("randomgrass", RandomgrassFeature::feature);
 }

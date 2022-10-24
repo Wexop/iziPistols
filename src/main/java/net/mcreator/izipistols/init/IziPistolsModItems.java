@@ -57,6 +57,7 @@ public class IziPistolsModItems {
 	public static final RegistryObject<Item> SOLID_PISTOL_OR = block(IziPistolsModBlocks.SOLID_PISTOL_OR, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> HOT_SOLID_PISTOL_STONE = block(IziPistolsModBlocks.HOT_SOLID_PISTOL_STONE,
 			CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> RANDOMGRASS = block(IziPistolsModBlocks.RANDOMGRASS, CreativeModeTab.TAB_DECORATIONS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

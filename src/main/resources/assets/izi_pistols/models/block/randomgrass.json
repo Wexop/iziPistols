@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "izi_pistols:blocks/randomgrass",
+    "particle": "izi_pistols:blocks/randomgrass"
+  },
+  "render_type": "cutout"
+}
