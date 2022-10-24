@@ -87,6 +87,9 @@
       },
       {
         "value": "Blocks.MYCELIUM"
+      },
+      {
+        "value": "Blocks.GRASS"
       }
     ],
     "frequencyOnChunks": 5,

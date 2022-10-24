@@ -41,7 +41,8 @@ public class RandomgrassBlock extends FlowerBlock {
 
 	@Override
 	public boolean mayPlaceOn(BlockState groundState, BlockGetter worldIn, BlockPos pos) {
-		return groundState.is(Blocks.SAND) || groundState.is(Blocks.DIRT_PATH) || groundState.is(Blocks.MYCELIUM);
+		return groundState.is(Blocks.SAND) || groundState.is(Blocks.DIRT_PATH) || groundState.is(Blocks.MYCELIUM)
+				|| groundState.is(Blocks.GRASS_BLOCK);
 	}
 
 	@Override
