@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "izi_pistols:randompistolore"
+    "izi_pistols:randompistolore",
+    "izi_pistols:solid_pistol_or"
   ]
 }

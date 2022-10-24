@@ -54,6 +54,7 @@ public class IziPistolsModItems {
 	public static final RegistryObject<Item> ANIMALPISTOL = REGISTRY.register("animalpistol", () -> new AnimalpistolItem());
 	public static final RegistryObject<Item> MONSTERPISTOL = REGISTRY.register("monsterpistol", () -> new MonsterpistolItem());
 	public static final RegistryObject<Item> SOLID_PISTOL = REGISTRY.register("solid_pistol", () -> new SolidPistolItem());
+	public static final RegistryObject<Item> SOLID_PISTOL_OR = block(IziPistolsModBlocks.SOLID_PISTOL_OR, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
