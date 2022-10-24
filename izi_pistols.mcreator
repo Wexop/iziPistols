@@ -479,6 +479,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "monsterpistol"
+    },
+    {
+      "name": "BulletPackCraft",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet_pack_craft"
     }
   ],
   "variable_elements": [],

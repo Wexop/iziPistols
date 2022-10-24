@@ -92,9 +92,15 @@ public class RandompistoloreBlockDestroyedByPlayerProcedure {
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
-			} else if (roll >= 0 && roll < 0.5) {
+			} else if (roll >= 0.25 && roll < 0.5) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IziPistolsModItems.IRONPISTOL.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			} else {
+				if (world instanceof Level _level && !_level.isClientSide()) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IziPistolsModItems.MONSTERPISTOL.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}

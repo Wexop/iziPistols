@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "izi_pistols:bullet"
+    },
+    "1": {
+      "item": "izi_pistols:bullet"
+    },
+    "2": {
+      "item": "izi_pistols:bullet"
+    },
+    "3": {
+      "item": "izi_pistols:bullet"
+    },
+    "4": {
+      "item": "izi_pistols:bullet"
+    },
+    "5": {
+      "item": "izi_pistols:bullet"
+    },
+    "6": {
+      "item": "izi_pistols:bullet"
+    },
+    "7": {
+      "item": "izi_pistols:bullet"
+    },
+    "8": {
+      "item": "izi_pistols:bullet"
+    }
+  },
+  "result": {
+    "item": "izi_pistols:bulletpack",
+    "count": 1
+  }
+}

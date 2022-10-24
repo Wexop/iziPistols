@@ -46,7 +46,7 @@
     "customDrop": {
       "value": "CUSTOM:Bullet"
     },
-    "dropAmount": 6,
+    "dropAmount": 9,
     "useLootTableForDrops": false,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
