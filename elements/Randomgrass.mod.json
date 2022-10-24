@@ -92,14 +92,17 @@
         "value": "Blocks.GRASS"
       }
     ],
-    "frequencyOnChunks": 5,
+    "frequencyOnChunks": 1,
     "spawnWorldTypes": [
       "Surface"
     ],
     "restrictionBiomes": [],
-    "patchSize": 64,
+    "patchSize": 3,
     "generateAtAnyHeight": false,
     "onDestroyedByPlayer": {
+      "name": "RandomgrassPlantDestroyedByPlayer"
+    },
+    "onDestroyedByExplosion": {
       "name": "RandomgrassPlantDestroyedByPlayer"
     }
   }

@@ -7,6 +7,7 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
@@ -67,6 +68,12 @@ public class TNTPistolEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void playerTouch(Player entity) {
 		super.playerTouch(entity);
+		TNTPistolBulletHitsBlockProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+	}
+
+	@Override
+	public void onHitEntity(EntityHitResult entityHitResult) {
+		super.onHitEntity(entityHitResult);
 		TNTPistolBulletHitsBlockProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 	}
 

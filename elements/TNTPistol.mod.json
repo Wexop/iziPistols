@@ -38,6 +38,9 @@
     },
     "onBulletHitsPlayer": {
       "name": "TNTPistolBulletHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "TNTPistolBulletHitsBlock"
     }
   }
 }

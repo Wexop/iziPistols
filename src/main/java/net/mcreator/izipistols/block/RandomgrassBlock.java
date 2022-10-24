@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.effect.MobEffects;
@@ -57,5 +58,11 @@ public class RandomgrassBlock extends FlowerBlock {
 		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
 		RandomgrassPlantDestroyedByPlayerProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		return retval;
+	}
+
+	@Override
+	public void wasExploded(Level world, BlockPos pos, Explosion e) {
+		super.wasExploded(world, pos, e);
+		RandomgrassPlantDestroyedByPlayerProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 }

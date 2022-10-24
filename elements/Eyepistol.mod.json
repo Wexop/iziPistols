@@ -35,6 +35,9 @@
     "customBulletModelTexture": "",
     "onBulletHitsBlock": {
       "name": "EyepistolBulletHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "EyepistolBulletHitsBlock"
     }
   }
 }

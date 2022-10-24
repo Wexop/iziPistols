@@ -32,9 +32,9 @@ public class RandomgrassFeature extends RandomPatchFeature {
 	public static Feature<?> feature() {
 		FEATURE = new RandomgrassFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("izi_pistols:randomgrass", FEATURE, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK,
-				new SimpleBlockConfiguration(BlockStateProvider.simple(IziPistolsModBlocks.RANDOMGRASS.get())), List.of(), 64));
+				new SimpleBlockConfiguration(BlockStateProvider.simple(IziPistolsModBlocks.RANDOMGRASS.get())), List.of(), 3));
 		PLACED_FEATURE = PlacementUtils.register("izi_pistols:randomgrass", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(5), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+				List.of(CountPlacement.of(1), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 		return FEATURE;
 	}
 
