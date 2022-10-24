@@ -7,8 +7,6 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.phys.EntityHitResult;
-import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
@@ -20,25 +18,24 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
-import net.mcreator.izipistols.procedures.AnimalpistolProjectileHitsBlockProcedure;
 import net.mcreator.izipistols.init.IziPistolsModItems;
 import net.mcreator.izipistols.init.IziPistolsModEntities;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
-public class AnimalpistolEntity extends AbstractArrow implements ItemSupplier {
-	public AnimalpistolEntity(PlayMessages.SpawnEntity packet, Level world) {
-		super(IziPistolsModEntities.ANIMALPISTOL.get(), world);
+public class SolidPistolEntity extends AbstractArrow implements ItemSupplier {
+	public SolidPistolEntity(PlayMessages.SpawnEntity packet, Level world) {
+		super(IziPistolsModEntities.SOLID_PISTOL.get(), world);
 	}
 
-	public AnimalpistolEntity(EntityType<? extends AnimalpistolEntity> type, Level world) {
+	public SolidPistolEntity(EntityType<? extends SolidPistolEntity> type, Level world) {
 		super(type, world);
 	}
 
-	public AnimalpistolEntity(EntityType<? extends AnimalpistolEntity> type, double x, double y, double z, Level world) {
+	public SolidPistolEntity(EntityType<? extends SolidPistolEntity> type, double x, double y, double z, Level world) {
 		super(type, x, y, z, world);
 	}
 
-	public AnimalpistolEntity(EntityType<? extends AnimalpistolEntity> type, LivingEntity entity, Level world) {
+	public SolidPistolEntity(EntityType<? extends SolidPistolEntity> type, LivingEntity entity, Level world) {
 		super(type, entity, world);
 	}
 
@@ -65,27 +62,14 @@ public class AnimalpistolEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	@Override
-	public void onHitEntity(EntityHitResult entityHitResult) {
-		super.onHitEntity(entityHitResult);
-		AnimalpistolProjectileHitsBlockProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
-	}
-
-	@Override
-	public void onHitBlock(BlockHitResult blockHitResult) {
-		super.onHitBlock(blockHitResult);
-		AnimalpistolProjectileHitsBlockProcedure.execute(this.level, blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(),
-				blockHitResult.getBlockPos().getZ());
-	}
-
-	@Override
 	public void tick() {
 		super.tick();
 		if (this.inGround)
 			this.discard();
 	}
 
-	public static AnimalpistolEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
-		AnimalpistolEntity entityarrow = new AnimalpistolEntity(IziPistolsModEntities.ANIMALPISTOL.get(), entity, world);
+	public static SolidPistolEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
+		SolidPistolEntity entityarrow = new SolidPistolEntity(IziPistolsModEntities.SOLID_PISTOL.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setCritArrow(false);
@@ -98,14 +82,14 @@ public class AnimalpistolEntity extends AbstractArrow implements ItemSupplier {
 		return entityarrow;
 	}
 
-	public static AnimalpistolEntity shoot(LivingEntity entity, LivingEntity target) {
-		AnimalpistolEntity entityarrow = new AnimalpistolEntity(IziPistolsModEntities.ANIMALPISTOL.get(), entity, entity.level);
+	public static SolidPistolEntity shoot(LivingEntity entity, LivingEntity target) {
+		SolidPistolEntity entityarrow = new SolidPistolEntity(IziPistolsModEntities.SOLID_PISTOL.get(), entity, entity.level);
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
 		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 3f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(0.1);
+		entityarrow.setBaseDamage(0.35);
 		entityarrow.setKnockback(0);
 		entityarrow.setCritArrow(false);
 		entity.level.addFreshEntity(entityarrow);

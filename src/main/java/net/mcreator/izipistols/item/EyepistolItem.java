@@ -31,7 +31,7 @@ public class EyepistolItem extends Item {
 
 	@Override
 	public UseAnim getUseAnimation(ItemStack itemstack) {
-		return UseAnim.BOW;
+		return UseAnim.NONE;
 	}
 
 	@Override

@@ -16,11 +16,11 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 
 import net.mcreator.izipistols.init.IziPistolsModItems;
-import net.mcreator.izipistols.entity.AnimalpistolEntity;
+import net.mcreator.izipistols.entity.SolidPistolEntity;
 
-public class AnimalpistolItem extends Item {
-	public AnimalpistolItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(5));
+public class SolidPistolItem extends Item {
+	public SolidPistolItem() {
+		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(100));
 	}
 
 	@Override
@@ -57,7 +57,7 @@ public class AnimalpistolItem extends Item {
 					}
 				}
 				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-					AnimalpistolEntity entityarrow = AnimalpistolEntity.shoot(world, entity, world.getRandom(), 3f, 0.1, 0);
+					SolidPistolEntity entityarrow = SolidPistolEntity.shoot(world, entity, world.getRandom(), 3f, 0.35, 0);
 					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 					if (entity.getAbilities().instabuild) {
 						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;

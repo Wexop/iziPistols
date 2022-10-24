@@ -57,7 +57,7 @@ public class MonsterpistolItem extends Item {
 					}
 				}
 				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-					MonsterpistolEntity entityarrow = MonsterpistolEntity.shoot(world, entity, world.getRandom(), 1f, 0.1, 0);
+					MonsterpistolEntity entityarrow = MonsterpistolEntity.shoot(world, entity, world.getRandom(), 3f, 0.1, 0);
 					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 					if (entity.getAbilities().instabuild) {
 						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;

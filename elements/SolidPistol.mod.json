@@ -3,9 +3,9 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
-    "texture": "nether_pistol",
+    "texture": "solidpistol",
     "customModelName": "Normal",
-    "name": "Nether pistol",
+    "name": "Solid Pistol",
     "specialInfo": [],
     "creativeTab": {
       "value": "COMBAT"
@@ -17,16 +17,16 @@
     "shootConstantly": false,
     "usageCount": 100,
     "actionSound": {
-      "value": "CUSTOM:tir_pistolet"
+      "value": "entity.arrow.shoot"
     },
     "hasGlow": false,
     "animation": "none",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "bulletPower": 5.0,
-    "bulletDamage": 0.30000000000000004,
+    "bulletPower": 3.0,
+    "bulletDamage": 0.35,
     "bulletKnockback": 0,
-    "bulletParticles": true,
+    "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
       "value": "CUSTOM:Bullet"

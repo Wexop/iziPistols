@@ -487,6 +487,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "bullet_pack_craft"
+    },
+    {
+      "name": "SolidPistol",
+      "type": "rangeditem",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solid_pistol"
+    },
+    {
+      "name": "SolidPistolCraft",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solid_pistol_craft"
     }
   ],
   "variable_elements": [],
@@ -516,6 +532,7 @@
       "block.izi_pistols.bulletpack": "Bulletpack",
       "item.izi_pistols.emeraudpistol": "EmeraudPistol",
       "item.izi_pistols.mob_powder_spawn_egg": "Mob Powder Spawn Egg",
+      "item.izi_pistols.solid_pistol": "Solid Pistol",
       "entity.izi_pistols.mob_powder": "Mob Powder",
       "item.izi_pistols.randompistol": "Random_pistol",
       "item.izi_pistols.bullet": "Bullet",

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "izi_pistols:woodpistol"
+    },
+    {
+      "item": "izi_pistols:stonepisto"
+    },
+    {
+      "item": "izi_pistols:test"
+    }
+  ],
+  "result": {
+    "item": "izi_pistols:solid_pistol",
+    "count": 1
+  }
+}
