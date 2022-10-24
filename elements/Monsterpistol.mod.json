@@ -17,7 +17,7 @@
     "shootConstantly": false,
     "usageCount": 3,
     "actionSound": {
-      "value": "entity.arrow.shoot"
+      "value": "CUSTOM:tir_pistolet"
     },
     "hasGlow": false,
     "animation": "none",
