@@ -535,6 +535,50 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "recipe_hot_solid_pistol_stone"
+    },
+    {
+      "name": "Randomgrass",
+      "type": "plant",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "randomgrass"
+    },
+    {
+      "name": "Randomcrafter",
+      "type": "item",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "randomcrafter"
+    },
+    {
+      "name": "RandomgrassPlantDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "randomgrass_plant_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -549,26 +593,28 @@
   ],
   "language_map": {
     "en_us": {
-      "block.izi_pistols.randompistolore": "Randompistolore",
-      "item.izi_pistols.animalpistol": "Animalpistol",
       "item.izi_pistols.woodpistol": "WoodPistol",
       "item.izi_pistols.blazepistol": "Blaze pistol",
-      "item.izi_pistols.eyepistol": "Eyepistol",
-      "item.izi_pistols.stonepisto": "StonePistol",
       "item.izi_pistols.test": "DirtPistol",
-      "item.izi_pistols.mob_powder": "Mob Powder Spawn Egg",
-      "item.izi_pistols.goldpistol": "GoldPistol",
       "item.izi_pistols.monsterpistol": "Monsterpistol",
       "item.izi_pistols.ironpistol": "IronPistol",
-      "item.izi_pistols.tnt_pistol": "TNTPistol",
-      "block.izi_pistols.bulletpack": "Bulletpack",
       "item.izi_pistols.emeraudpistol": "EmeraudPistol",
       "item.izi_pistols.mob_powder_spawn_egg": "Mob Powder Spawn Egg",
-      "block.izi_pistols.hot_solid_pistol_stone": "Hot Solid Pistol Stone",
       "item.izi_pistols.solid_pistol": "Solid Pistol",
+      "item.izi_pistols.randompistol": "Random_pistol",
+      "block.izi_pistols.randompistolore": "Randompistolore",
+      "item.izi_pistols.animalpistol": "Animalpistol",
+      "item.izi_pistols.eyepistol": "Eyepistol",
+      "item.izi_pistols.stonepisto": "StonePistol",
+      "item.izi_pistols.mob_powder": "Mob Powder Spawn Egg",
+      "item.izi_pistols.goldpistol": "GoldPistol",
+      "item.izi_pistols.tnt_pistol": "TNTPistol",
+      "block.izi_pistols.bulletpack": "Bulletpack",
+      "block.izi_pistols.randomgrass": "Randomgrass",
+      "item.izi_pistols.randomcrafter": "Randomcrafter",
+      "block.izi_pistols.hot_solid_pistol_stone": "Hot Solid Pistol Stone",
       "entity.izi_pistols.mob_powder": "Mob Powder",
       "block.izi_pistols.solid_pistol_or": "Solid Pistol Or",
-      "item.izi_pistols.randompistol": "Random_pistol",
       "item.izi_pistols.bullet": "Bullet",
       "item.izi_pistols.diamspistol": "DiamsPistol",
       "item.izi_pistols.netherpistol": "Nether pistol"

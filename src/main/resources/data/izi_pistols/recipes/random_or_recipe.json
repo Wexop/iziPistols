@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "izi_pistols:randomcrafter"
+    },
+    "1": {
+      "item": "izi_pistols:randomcrafter"
+    },
+    "2": {
+      "item": "izi_pistols:randomcrafter"
+    },
+    "3": {
+      "item": "izi_pistols:randomcrafter"
+    },
+    "4": {
+      "item": "izi_pistols:hot_solid_pistol_stone"
+    },
+    "5": {
+      "item": "izi_pistols:randomcrafter"
+    },
+    "6": {
+      "item": "izi_pistols:randomcrafter"
+    },
+    "7": {
+      "item": "izi_pistols:randomcrafter"
+    },
+    "8": {
+      "item": "izi_pistols:randomcrafter"
+    }
+  },
+  "result": {
+    "item": "izi_pistols:randompistolore",
+    "count": 1
+  }
+}

@@ -95,6 +95,9 @@
     ],
     "restrictionBiomes": [],
     "patchSize": 64,
-    "generateAtAnyHeight": false
+    "generateAtAnyHeight": false,
+    "onDestroyedByPlayer": {
+      "name": "RandomgrassPlantDestroyedByPlayer"
+    }
   }
 }

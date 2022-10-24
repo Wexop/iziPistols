@@ -20,6 +20,7 @@ import net.mcreator.izipistols.item.TNTPistolItem;
 import net.mcreator.izipistols.item.StonepistoItem;
 import net.mcreator.izipistols.item.SolidPistolItem;
 import net.mcreator.izipistols.item.RandompistolItem;
+import net.mcreator.izipistols.item.RandomcrafterItem;
 import net.mcreator.izipistols.item.NetherpistolItem;
 import net.mcreator.izipistols.item.MonsterpistolItem;
 import net.mcreator.izipistols.item.IronpistolItem;
@@ -58,6 +59,7 @@ public class IziPistolsModItems {
 	public static final RegistryObject<Item> HOT_SOLID_PISTOL_STONE = block(IziPistolsModBlocks.HOT_SOLID_PISTOL_STONE,
 			CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> RANDOMGRASS = block(IziPistolsModBlocks.RANDOMGRASS, CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> RANDOMCRAFTER = REGISTRY.register("randomcrafter", () -> new RandomcrafterItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
